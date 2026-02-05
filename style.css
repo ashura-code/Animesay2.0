@@ -1,0 +1,36 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'system-ui';
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1 {
+  font-family: 'Nabla', 'system-ui';
+  font-size: 6rem;
+}
+
+img{ 
+    border-radius: 50%;
+    height:300px;
+    width:200px;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(11, 11, 11);
+  color: aliceblue;
+}
