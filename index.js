@@ -25,16 +25,16 @@ const getAnimeQuote = async () => {
   let variable = await fetch('https://api.rei.my.id/animequotes/random')
     .then((val) => val.json())
     .then((res) => {
-      document.getElementById('quote').innerHTML = res.english
+      document.getElementById('quote_string').innerHTML = res.english
         ? res.english
         : JSON.stringify(res);
-      document.getElementById('character').innerHTML = res.character
+      document.getElementById('character_string').innerHTML = res.character
         ? '<b>character: </b>' + res.character
         : JSON.stringify(res);
-      document.getElementById('anime').innerHTML = res.anime
+      document.getElementById('anime_string').innerHTML = res.anime
         ? res.anime
         : JSON.stringify(res);
-      // getPhoto(res.character, res.anime);
+      getPhoto(res.character, res.anime);
     });
 };
 
